@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="glider/estilosglider.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilosnoti.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    <title>Pagina de noticias</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo">
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+
+                    <figure>
+                        <h2>Periodista peruano en EE. UU.: "La fiesta de la independencia no será la misma”</h2>
+                        <center> <img src="imagenes/mun2.jpg" alt=""  class="noticia" ></center>
+                        
+                    </figure>
+                    <p>Mientras los Estados Unidos cuentan diariamente más de 40 mil casos de covid-19, las autoridades siguen discutiendo el uso de las mascarillas en lugares públicos, señaló este jueves el periodista peruano Gerardo Reyna, desde el país norteamericano.<br><br>
+
+                        Reyna informó, gracias a un reporte exclusivo para la Agencia de Noticias Andina, que “los expertos ven una relación entre el aumento de casos y la reapertura de los negocios, al menos 33 estados han aumentado los casos de coronavirus por lo que han decidido detener las fases de la vuelta a la normalidad”.<br><br>
+                        
+                        El periodista también resaltó que resulta increíble que exista en el país un debate sobre el uso de las mascarillas: “Las autoridades exigen a los ciudadanos el uso de las mascarillas, sin embargo, todavía se ven imágenes de personas que se pelean en lugares de consumo por no querer portarlas”, informó.<br><br>
+                        
+                        Sobre esa misma línea, el periodista peruano puntualizó que “los críticos al presidente Donald Trump todavía le recuerdan (que no está bien) que él aparezca públicamente sin ningún tipo de protección”.</p>
+                        <h3>Contagios antes del Día de la Independencia</h3><br>
+
+                        <p>En el estado de California, según el reporte de Reyna, el gobernador ha soltado la frase “nuestras acciones salvan vidas” y es que en este estado se han registrado, en los últimos dos días, más de 15,000 casos de coronavirus, lo que ha sido todo un record para esta ciudad.<br><br>
+
+                            La gran cantidad de contagios ha hecho que “ciudades como San Francisco detengan la reapertura de negocios que ya estaban programadas como, por ejemplo, las peluquerías”, informó.<br><br>
+                            
+                            “Estamos a muy pocos días de que se celebre el día de la independencia, el 4 de julio hará que las personas se reúnan en las playas, por ejemplo, que seguramente estarán llenas, sin embargo, en el año de la pandemia, la fiesta de la independencia no será la misma”, finalizó el periodista.</p>
+                        
+                        
+                        </section>
+
+           
+
+            <div class="separador">
+            <h3 class="lines-effect">Noticias que podrian interesarte</h3>
+            </div>
+
+    
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <a href="dark.html">
+                            <img src="imagenes/dark1.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>“Dark”, temporada 3 ¿Final?</p>
+                            </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="nasa.html">
+                                <img src="imagenes/nasa.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Científico astrónomo descubre una nueva "mancha" en Júpiter</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="xbox.html">
+                                <img src="imagenes/xbox.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Xbox Series S</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="i9.html">
+                                <img src="imagenes/i9.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Se filtra el Intel Core i9-10850K</p>
+                                </a>
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <a href="intel.html">
+                                <img src="imagenes/intel.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Intel lanzaría su chipset Z590</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="bbva.html">
+                                <img src="imagenes/bbva.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>BBVA y sus colaboradores donan 50 mil imlementos. </p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="microsoft.html">
+                                <img src="imagenes/microsoft.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Microsoft remueve la palabra “Master” de Github</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="lomasvisto1.html">
+                                <img src="imagenes/lentes.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Nuevos lentes de realidad virtual de FB</p>
+                                </a>
+                        </div>
+                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                  <!--  <div role="tablist" class="carousel__indicadores"></div>    -->
+            </div>
+	</div>
+
+
+
+
+    
+    </main>
+    </div>
+
+    
+    
+
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="glider/glider.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

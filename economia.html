@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    
+    <script src="js/formulario.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estiloscategoria.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo"> 
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+
+
+    <main>
+
+        <div class="contenedor">
+
+        <div class="separador">
+            <h3 class="lines-effect">Economia</h3>
+            </div>
+
+            <div class="primero">
+        <section >
+            <a href="eco1.html">
+            <img src="imagenes/eco1.jpg" alt="" >
+            <h4>¿Empresas deberán tomar pruebas de COVID-19 a todos sus trabajadores?</h4>
+                </a>
+        </section>
+
+        <section >
+            <a href="eco2.html">
+            <img src="imagenes/eco2.jpg" alt="" >
+            <h4>¿Cómo denunciar si la empresa en la que trabajo no cumple con los protocolos?</h4>
+           
+            </a>
+        </section> 
+        
+        <section >
+            <a href="eco3.html">
+            <img src="imagenes/eco3.jpg" alt="" >
+            
+           <h4>BCR: Pensión 65 debería ser ampliada para llegar a todos los pobres</h4>
+            </a>
+        </section>
+    </div>
+
+    <div class="separador">
+        <h3 class="lines-effect">Mas noticias</h3>
+        </div>
+
+    <div class="segundo">
+    <article >
+
+        <a href="eco4.html" >
+        <img src="imagenes/eco4.jpg" alt="" >
+        <div class="texto">
+        <h3>¿Cuándo iniciarán los vuelos nacionales y los viajes interprovinciales?, esto dijo el MTC</h3>
+        <p>El ministro de Transportes y Comunicaciones, Carlos Lozada, explicó algunos de los protocolos que se tomarán para los viajes al interior del país a partir de esta nueva etapa de la reactivacion económica.</p>
+        </div>
+        </a>
+
+    </article>
+
+    <article>
+
+        <a href="eco5.html">
+        <img src="imagenes/eco5.png" alt="" >
+        <div class="texto">
+        <h3>Tipo de cambio: ¿A cuánto cerró la cotización del dólar esta semana?</h3>
+        <p>Al cierre de este viernes 03 de julio, el precio de la moneda estadounidense continúa por encima de los S/3.50 en el mercado peruano.</p>
+        </div>
+        </a>
+
+    </article>
+
+    <article>
+
+        <a href="eco6.html">
+        <img src="imagenes/eco6.jpg" alt="" >
+        <div class="texto">
+        <h3>Indecopi logra eliminar 219 anuncios en internet con información engañosa de productos contra la COVID-19</h3>
+        <p>En las plataformas de comercio digital se encontró publicidad de productos y servicios relacionados a suplementos vitamínicos, mascarillas, guantes, servicios de desinfección, productos naturales, medicamentos, pruebas rápidas, geles, alcohol y desinfectantes, trajes sanitarios, entre otros.</p>
+        </div>
+        </a>
+
+    </article>
+
+    <article>
+
+        <a href="eco7.html">
+        <img src="imagenes/eco7.jpg" alt="" >
+        <div class="texto">
+        <h3>Feriado por 28 de julio: ¿Es importante eliminar los feriados para reactivar la economía?</h3>
+        <p>Dos economistas evalúan la decisión que tomó el presidente Martín Vizcarra al eliminar dos de los feriados establecidos por Fiestas Patrias.</p>
+        </div>
+        </a>
+
+    </article>
+
+</div>      
+
+</div>
+    </main>
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animaciones.js"></script>
+</body>
+</html>

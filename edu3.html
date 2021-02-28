@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="glider/estilosglider.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilosnoti.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    <title>Pagina de noticias</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo">
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+
+                    <figure>
+                        <h2>Minedu contrató a 6 mil profesionales para atender a 110 mil nuevos alumnos de colegios públicos</h2>
+                        <center> <img src="imagenes/edu3.jpg" alt=""  class="noticia" ></center>
+                        
+                    </figure>
+                    <p>Más de 6 mil personas, entre docentes, directivos, auxiliares y personal administrativo, han sido contratadas por el Ministerio de Educación (Minedu) con una inversión de 71,4 millones de soles para atender a los 110 mil estudiantes que han ingresado al sistema de educación pública luego del proceso de matrícula excepcional 2020.<br><br>
+
+                        De estos estudiantes, cerca de 64 mil fueron asignados a aulas ya operativas con vacantes disponibles; sin embargo, también ha sido necesario generar 1,901 nuevas aulas para atender a 46,595 estudiantes con vacantes ampliadas y semipresenciales. Para esto último no ha sido necesaria la construcción de nueva infraestructura ya que se han asignado vacantes en nuevos turnos a colegios existentes.<br><br>
+                        
+                        El personal de las instituciones educativas públicas que acogerán a los estudiantes que obtuvieron una vacante en el proceso de matrícula excepcional 2020 se está comunicando desde el 3 de julio con las familias de estos alumnos para brindarles información sobre el desarrollo del servicio educativo.<br><br>
+                        
+                        El Minedu ha asignado tres tipos de vacantes: regular, ampliada y virtual. Las vacantes regular y ampliada incorporan al estudiante al sistema educativo en la modalidad presencial y la vacante virtual lo hace en forma semipresencial. En esta modalidad, el estudiante trabajará desde casa con el acompañamiento a distancia de su tutor de acogida o docentes, y asistirá a la institución educativa únicamente para las sesiones de orientación, tutoría y retroalimentación.<br><br>
+                        
+                        La incorporación de las vacantes ampliadas y semipresenciales ha sido posible gracias a la ampliación de turnos de atención en escuelas que los directivos identificaron y registraron en el Sistema de Información de Apoyo a la Gestión de la Institución Educativa (SIAGIE) hasta el 25 de mayo del 2020.</p>
+                        
+                        
+                        
+                        </section>
+
+           
+
+            <div class="separador">
+            <h3 class="lines-effect">Noticias que podrian interesarte</h3>
+            </div>
+
+    
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <a href="dark.html">
+                            <img src="imagenes/dark1.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>“Dark”, temporada 3 ¿Final?</p>
+                            </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="nasa.html">
+                                <img src="imagenes/nasa.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Científico astrónomo descubre una nueva "mancha" en Júpiter</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="xbox.html">
+                                <img src="imagenes/xbox.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Xbox Series S</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="i9.html">
+                                <img src="imagenes/i9.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Se filtra el Intel Core i9-10850K</p>
+                                </a>
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <a href="intel.html">
+                                <img src="imagenes/intel.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Intel lanzaría su chipset Z590</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="bbva.html">
+                                <img src="imagenes/bbva.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>BBVA y sus colaboradores donan 50 mil imlementos. </p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="microsoft.html">
+                                <img src="imagenes/microsoft.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Microsoft remueve la palabra “Master” de Github</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="lomasvisto1.html">
+                                <img src="imagenes/lentes.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Nuevos lentes de realidad virtual de FB</p>
+                                </a>
+                        </div>
+                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                  <!--  <div role="tablist" class="carousel__indicadores"></div>    -->
+            </div>
+	</div>
+
+
+
+
+    
+    </main>
+    </div>
+
+    
+    
+
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="glider/glider.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

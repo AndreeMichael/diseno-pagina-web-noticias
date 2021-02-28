@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="glider/estilosglider.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilosnoti.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    <title>Pagina de noticias</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo">
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+
+                    <figure>
+                        <h2>¿Cómo denunciar si la empresa en la que trabajo no cumple con los protocolos?</h2>
+                        <center> <img src="imagenes/eco2.jpg" alt=""  class="noticia" ></center>
+                        
+                    </figure>
+                    <p>Con el fin de la cuarentena, miles de peruanos están regresando a sus centros de labores. Para ello, el Ministerio de Trabajo ha establecido unos lineamientos para minimizar el contagio de COVID-19 en las oficinas.<br><br>
+
+                        Las empresas deberán realizar sus planes de vigilancia sanitaria y dentro de ello es obligatorio:<p>
+                    
+                            <ul>
+                                <li>Distanciamiento social no menor de un (1) metro.</li>
+                                <li>Lavado frecuente de manos.</li>
+                                <li>Uso de mascarilla</li>
+                            </ul>
+
+                            <h3>¿Puedo denunciar si no cumplen con las medidas?</h3>
+                            <p>Actualmente en proceso una plataforma para aquellos trabajadores que consideren que la empresa en la que laboran no está cumpliendo con los protocolos necesarios para el reinicio de labores.<br><br>
+
+                                "Se está creando un aplicativo en el cual cualquiera trabajador que vea que se ha presentado información falsa en planes o en el sistema de seguridad y salud en el trabajo, puede ingresar a este aplicativo", precisó el especialista.<br><br>
+                                
+                                Este mecánismo de defensa está en preparación y fue establecido en la reciente Resolución Ministerial Nº 448-2020-MINSA emitida el pasado 30 de junio.<br><br>
+                                
+                                Por el momento pueden denunciar en la web de la Superintendencia Nacional de Fiscalización Laboral (Sunafil) y también pueden llamar al 0800-16872.<br><br>
+                                
+                                "Si se evidencia que no se cumplieron con las medidas sanitarias correspondientes o se están obligando a los trabajadores a acudir sin las medidas o las acciones de control correspondiente, puede ocurrir una sanción o cancelación del registro", explica Alache.<br><br>
+                                
+                                Además, la Sunafil que se encarga de la fiscalización podrá establecer multas administrativas de hasta S/225 mil, dependiendo de la cantidad de trabajadores afectados.</p>
+                    
+                       <center><iframe width="560" height="315" src="https://www.youtube.com/embed/U1L7q2NVvrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                    
+                    
+            </section>
+
+           
+
+            <div class="separador">
+            <h3 class="lines-effect">Noticias que podrian interesarte</h3>
+            </div>
+
+    
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <a href="dark.html">
+                            <img src="imagenes/dark1.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>“Dark”, temporada 3 ¿Final?</p>
+                            </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="nasa.html">
+                                <img src="imagenes/nasa.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Científico astrónomo descubre una nueva "mancha" en Júpiter</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="xbox.html">
+                                <img src="imagenes/xbox.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Xbox Series S</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="i9.html">
+                                <img src="imagenes/i9.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Se filtra el Intel Core i9-10850K</p>
+                                </a>
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <a href="intel.html">
+                                <img src="imagenes/intel.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Intel lanzaría su chipset Z590</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="bbva.html">
+                                <img src="imagenes/bbva.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>BBVA y sus colaboradores donan 50 mil imlementos. </p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="microsoft.html">
+                                <img src="imagenes/microsoft.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Microsoft remueve la palabra “Master” de Github</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="lomasvisto1.html">
+                                <img src="imagenes/lentes.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Nuevos lentes de realidad virtual de FB</p>
+                                </a>
+                        </div>
+                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                  <!--  <div role="tablist" class="carousel__indicadores"></div>    -->
+            </div>
+	</div>
+
+
+
+
+    
+    </main>
+    </div>
+
+    
+    
+
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="glider/glider.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

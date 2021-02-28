@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="glider/estilosglider.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilosnoti.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    <title>Pagina de noticias</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo">
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+
+                    <figure>
+                        <h2>Inmunidad parlamentaria: Ledesma ve difícil un referéndum ante riesgo por COVID-19</h2>
+                        <center> <img src="imagenes/pol5.jpg" alt=""  class="noticia" ></center>
+                        
+                    </figure>
+                    <p>La presidenta del Tribunal Constitucional (TC), Marianella Ledesma, lamentó que el pleno del Congreso de la República no haya aprobado la eliminación de la inmunidad parlamentaria, que no alcanzó los 87 votos necesarios y que ahora deberá ser sometido a un referéndum.<br><br>
+
+                        En Exitosa Noticias, señaló que se trató de una “posibilidad perdida” por la clase política del Legislativo para aprobar las reformas que la ciudadanía reclama.<br><br>
+                        
+                        Asimismo, Ledesma dijo esperar que la ciudadanía mantenga una actitud vigilante frente a ciertos personajes que “buscan impunidad” llegando al Parlamento Nacional.<br><br>
+                        
+                        “Lamentablemente es una posibilidad que ha perdido la clase política del Congreso, por trabajar por esos cambios que la población peruana reclama y tarde o temprano, la falta de legitimidad en una democracia representativa”, expresó.<br><br>
+                        
+                        “Esperemos que la ciudadanía pueda mantener una actitud vigilante ante el accionar de figuras que se han terminado pervirtiendo y buscan impunidad frente a acciones delictivas demostradas por mandatos judiciales”, añadió la titular del TC.<br><br>
+                        
+                        Ledesma también advirtió los riesgos que generaría realizar un referéndum en el actual contexto de pandemia por el coronavirus (COVID-19) y dijo que esta acción demandará una serie de alternativas muy complejas.<br><br>
+                        
+                        “Ir a un referéndum implica varias razones complejas por el tema de la crisis sanitaria. En otras condiciones, hubiese sido una alternativa para destacar, ya que sería una participación de la población peruana, pero como se ve en la actualidad, es totalmente diferente. Se pone en riesgo un tema de salud pública”, sentenció.</p>
+                        
+                        <center><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FExitosanoticias%2Fvideos%2F275884320400468%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></center>
+                        
+                        </section>
+
+           
+
+            <div class="separador">
+            <h3 class="lines-effect">Noticias que podrian interesarte</h3>
+            </div>
+
+    
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <a href="dark.html">
+                            <img src="imagenes/dark1.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>“Dark”, temporada 3 ¿Final?</p>
+                            </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="nasa.html">
+                                <img src="imagenes/nasa.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Científico astrónomo descubre una nueva "mancha" en Júpiter</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="xbox.html">
+                                <img src="imagenes/xbox.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Xbox Series S</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="i9.html">
+                                <img src="imagenes/i9.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Se filtra el Intel Core i9-10850K</p>
+                                </a>
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <a href="intel.html">
+                                <img src="imagenes/intel.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Intel lanzaría su chipset Z590</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="bbva.html">
+                                <img src="imagenes/bbva.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>BBVA y sus colaboradores donan 50 mil imlementos. </p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="microsoft.html">
+                                <img src="imagenes/microsoft.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Microsoft remueve la palabra “Master” de Github</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="lomasvisto1.html">
+                                <img src="imagenes/lentes.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Nuevos lentes de realidad virtual de FB</p>
+                                </a>
+                        </div>
+                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                  <!--  <div role="tablist" class="carousel__indicadores"></div>    -->
+            </div>
+	</div>
+
+
+
+
+    
+    </main>
+    </div>
+
+    
+    
+
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="glider/glider.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

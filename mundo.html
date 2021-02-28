@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estiloscategoria.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo"> 
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+
+
+    <main>
+
+        <div class="contenedor">
+
+        <div class="separador">
+            <h3 class="lines-effect">Mundo</h3>
+            </div>
+
+            <div class="primero">
+        <section >
+            <a href="mun1.html"> 
+            <img src="imagenes/mun1.jpg" alt="" >
+            <h4>El mundo ya supera los 11 millones de contagios por covid-19</h4>
+        </section>
+
+        <section >
+            <a href="mun2.html">
+            <img src="imagenes/mun2.jpg" alt="" >
+            <h4>Periodista peruano en EE. UU.: "La fiesta de la independencia no será la misma”</h4>
+            </a>
+        </section> 
+        
+        <section >
+            <a href="mun3.html">
+            <img src="imagenes/mun3.jpg" alt="" >
+            <h4>Coronavirus: podríamos tener más de una vacuna, pero ¿todas serán seguras?</h4>
+            </a>
+        </section>
+    </div>
+
+    <div class="separador">
+        <h3 class="lines-effect">Mas noticias</h3>
+        </div>
+
+        <div class="segundo">
+            <article >
+        
+                <a href="mun4.html" >
+                <img src="imagenes/mun4.jpg" alt="" >
+                <div class="texto">
+                <h3>Estados Unidos registra 52.492 nuevos contagios de coronavirus el 4 de Julio</h3>
+                <p>Las cifras diarias en Estados Unidos se han disparado en el último mes a raíz del rebrote de contagios en estados del sur y del oeste como Florida, Texas, California, Arizona, Georgia y las Carolinas</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="nasa.html">
+                <img src="imagenes/nasa.jpg" alt="" >
+                <div class="texto">
+                <h3>Científico astrónomo descubre una nueva "mancha" en Júpiter</h3>
+                <p>Un astrónomo aficionado en Sudáfrica ha detectado una nueva "mancha" en la superficie de Júpiter y el satélite Juno de la NASA lo confirma.</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="mun5.html">
+                <img src="imagenes/mun5.jpg" alt="" >
+                <div class="texto">
+                <h3>¿Qué han hecho los millonarios con su dinero durante la pandemia de coronavirus?</h3>
+                <p>Mientras el coronavirus deja una estela de desempleo a su paso, algunas fortunas se han incrementado durante la cuarentena por COVID-19, alcanzando sus máximos históricos</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="inicio3.html">
+                <img src="imagenes/i3.jpg" alt="" >
+                <div class="texto">
+                <h3>4 de Julio: Trump celebra el Día de la Independencia rodeado de cientos de personas pese al coronavirus</h3>
+                <p>La celebración se produce un día después de que Donald Trump iniciara el fin de semana feriado viajando al Monte Rushmore</p>
+                </div>
+                </a>
+        
+            </article>
+        
+        </div>         
+
+</div>
+    </main>
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animaciones.js"></script>
+</body>
+</html>

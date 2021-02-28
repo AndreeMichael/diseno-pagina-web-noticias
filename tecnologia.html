@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estiloscategoria.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo"> 
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+
+
+    <main>
+
+        <div class="contenedor">
+
+        <div class="separador">
+            <h3 class="lines-effect">Tecnología</h3>
+            </div>
+
+            <div class="primero">
+        <section >
+            <a href="xbox.html">
+            <img src="imagenes/xbox.jpg" alt="" >
+            <h4>La Xbox Series S tendría un factor de forma portable, su SOC estaría fabricado a 5nm </h4><br> 
+           
+                </a>
+        </section>
+
+        <section >
+            <a href="intel.html">
+            <img src="imagenes/intel.jpg" alt="" >
+            <h4>Intel lanzaría su chipset Z590 en enero de 2021, probablemente durante CES</h4>
+           
+            </a>
+        </section> 
+        
+        <section >
+            <a href="tec1.html">
+            <img src="imagenes/tec1.jpg" alt="" >
+            <h4>La GPU de la Xbox Series S “Lockhart” tendría 20 unidades de cómputo</h4>
+            </a>
+        </section>
+    </div>
+
+    <div class="separador">
+        <h3 class="lines-effect">Mas noticias</h3>
+        </div>
+
+        <div class="segundo">
+            <article >
+        
+                <a href="tec2.html" >
+                <img src="imagenes/tec2.jpg" alt="" >
+                <div class="texto">
+                <h3>Un estudio asegura que cambiar el router de tu ISP aumentará tu felicidad</h3>
+                <p>Hace tiempo que muchos ISPs han empezado a ofrecer módems con router inalámbrico incorporado, ahorrándote el tener que comprar uno tú mismo para tener Wi-Fi. Sin embargo, tal vez deberías comprar uno de todos modos.</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="tec3.html">
+                <img src="imagenes/tec3.jpg" alt="" >
+                <div class="texto">
+                <h3>Intel no puede venderle CPUs a algunas empresas Chinas, las cuales compran el 50% de las CPUs para servidores en ese país</h3>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="tec4.html">
+                <img src="imagenes/tec4.jpg" alt="" >
+                <div class="texto">
+                <h3>Intel confirma que Alder Lake-S usará el zócalo LGA 1700</h3>
+                <p>Hace rato venimos escuchando rumores de que los futuros procesadores Alder Lake-S de Intel utilizarán el zócalo LGA 1700, y ahora esto fue confirmado en documentación oficial de la marca ubicada en su sitio para desarrolladores.</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="tec5.html">
+                <img src="imagenes/tec5.jpg" alt="" >
+                <div class="texto">
+                <h3>Nvidia anuncia que Death Stranding soportará DLSS 2.0</h3>
+                
+                </div>
+                </a>
+        
+            </article>
+        
+        </div>      
+
+</div>
+    </main>
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+.contenedor {
+	width: 80%;
+	
+	margin:auto;
+}
+hr{
+    padding: 0px;
+    margin: 0px;
+}
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	/*max-width:1000px;*/
+    width:100%;
+	background-color: white;
+}
+header nav a {
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+	margin:6px 20px;
+    font-size:20px;
+    border-bottom: 2px white solid;
+}
+header nav a:hover {
+    cursor:pointer;
+    color: black;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+}
+.logo{
+    margin: 10px;
+    text-align: center;
+}
+.logo a:hover{
+    color: black;
+    text-decoration: none;
+    cursor:pointer; 
+}
+h1{
+    color: black;
+    text-align: center;
+    margin-left: 115px;
+}
+/*formulario suscribete*/
+header button{
+    border: none;
+    margin-top: 4px;
+    padding: 8px;
+    float: right;
+    margin-right: 15px;
+    background-color: rgba(0, 26, 255, 0.719) ;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+/*********************************/
+
+/****foooooooooteeeeer **********/
+
+footer{
+    padding: 10px;
+    background-color: rgba(0, 26, 255, 0.719);
+    display: flex;
+}
+footer p{
+    color: black;
+    margin: auto;
+}
+footer div a{
+    text-decoration: none;
+    color: black;
+
+}
+.social{
+   margin: auto;
+}
+footer i{
+    color: black;
+    padding-left: 15px;
+}
+
+footer i:hover{
+    color: white;
+}
+
+/***************separador *************/
+.separador{
+    text-align: center;
+    margin: 15px 0px;
+    margin-bottom: 25px;
+}
+.separador h3{
+    display: inline-block;
+    position: relative;
+}
+.separador h3::after, .separador h3::before{
+    color: black;
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+.separador h3::before{
+    left: -220px;
+}
+.separador h3::after{
+    right: -220px;
+}
+/*******************************************************/
+
+/***********texto dentro de imagenes*************/
+figure{
+    width: 100%; /*antes 25*/
+    margin:0px;  /*sin bordes*/
+    margin-bottom: 0%; /*espaciado con las imagenes siguientes*/
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+figcaption{
+    display: block; /*no se vera hasta pasar el mouse*/
+    background: rgba(255, 254, 254, 0.4);
+    position: absolute; /*tomara como bordes la posicion relative de figure*/
+    left: 0px;
+    bottom: 0px;  /*para que salga justo en el borde inferior de la imagen*/
+    width: 100%;
+    padding: 2%;
+    color: rgb(21, 15, 78);
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    font: bold;
+    font-size: 16px;
+}
+figure:hover figcaption/*cuando el mouse pase sobre figure aparecera en bloque figcaption*/{
+    display: block;
+    background: rgba(255, 254, 254, 0.7);
+}
+
+/***************************************************************/
+
+/********* orden de noticias**************/
+.primero{
+    width: 100%;
+    display: flex;
+    padding-bottom: 1%;
+}
+section{
+    width: 33%;
+    margin-right: 1%;
+}
+section img{
+    width: 100%;
+}
+section p{
+    color: black;
+}
+section a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+article{
+    width: 100%;
+    
+    
+}
+article a img{
+    width: 40%;
+    margin-bottom: 4%;
+
+}
+article a:hover{
+    text-decoration: none;
+}
+article a{
+    display: flex;
+}
+article a p,h3,h4{
+    /*width: 50%;
+    padding: 5% 0%;*/
+    color: black;
+}
+.texto{
+    margin-left: 5%;
+    margin-right: 0%;
+    width: 50%;
+    display: block;
+}
+
+article{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation:mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{ 
+    0%{
+        transform: translatex(-60px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+.mostrarderecha{
+    animation:mostrarderecha 1s;
+}
+
+@keyframes mostrarderecha{ 
+    0%{
+        transform: translatey(60px);
+    }
+    100%{
+        transform: translatey(0);
+    }
+}

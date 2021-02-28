@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="glider/estilosglider.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilosnoti.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    <title>Pagina de noticias</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo">
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+
+                    <figure>
+                        <h2>Facebook trabaja en lentes de realidad virtual ultra-livianos similares a unos lentes de sol</h2>
+                        <center> <img src="imagenes/lentes.jpg" alt=""  class="noticia" ></center>
+                        
+                    </figure>
+                    <p>Si bien las gafas de realidad virtual actuales son bastante pesadas y voluminosas, esto podría cambiar pronto gracias a Oculus y Facebook. De acuerdo a un reciente documento publicado por el gigante de las redes sociales, un diseño de ópticas holográficas convertiría a los aparatosos lentes de RV actuales en un par de lentes ultra-livianos similares a unos lentes de sol.
+
+                        Aunque a Facebook se le conoce más que todo por su red social, la empresa también se dedica a ámbitos como el de la inteligencia artificial o la realidad virtual/aumentada con Oculus. Esta última empresa es la que está trabajando en el nuevo prototipo de lentes de RV, que revolucionaría este mercado para siempre.<p>
+                    <center><img src="imagenes/lentes1.jpg" alt=""></center>
+                    <p>En el documento compartido previamente, los ingenieros de la compañía detrás del proyecto explican cómo lograron disminuir de tal manera el tamaño de los lentes. Gracias a una nueva técnica de óptica que combina diferentes capas de película holográfica con un plegado óptico polarizado, los lentes alcanzaron un grosor de solo nueve milímetros.
+
+                        El objetivo de Facebook es reducir el tamaño de los cristales utilizados en los lentes de realidad virtual de la actualidad. La pantalla LCD de éstos ya es delgada, pero el problema radica en el lente en sí, el cual es grueso y un tanto pesado. El gigante de las redes sociales propone cambiarlo por un lente holográfico formado de varias capas, el cual es capaz de reflejar la luz en un espacio más reducido antes de enviarla al ojo.</p>
+                    
+                        <section>
+                            <center>   <iframe width="560" height="315" src="https://www.youtube.com/embed/Yd-BOX82lCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </center>
+                           </section>
+                    
+                    <h2>¿Te gustaría probar estos lentes de realidad virtual ultra-livianos de Facebook?</h2>
+                    
+            </section>
+
+           
+
+            <div class="separador">
+            <h3 class="lines-effect">Noticias que podrian interesarte</h3>
+            </div>
+
+    
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <a href="dark.html">
+                            <img src="imagenes/dark1.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>“Dark”, temporada 3 ¿Final?</p>
+                            </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="nasa.html">
+                                <img src="imagenes/nasa.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Científico astrónomo descubre una nueva "mancha" en Júpiter</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="xbox.html">
+                                <img src="imagenes/xbox.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Xbox Series S</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="i9.html">
+                                <img src="imagenes/i9.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Se filtra el Intel Core i9-10850K</p>
+                                </a>
+                        </div>
+        
+                        <div class="carousel__elemento">
+                            <a href="intel.html">
+                                <img src="imagenes/intel.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Intel lanzaría su chipset Z590</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="bbva.html">
+                                <img src="imagenes/bbva.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>BBVA y sus colaboradores donan 50 mil imlementos. </p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="microsoft.html">
+                                <img src="imagenes/microsoft.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Microsoft remueve la palabra “Master” de Github</p>
+                                </a>
+                        </div>
+                        <div class="carousel__elemento">
+                            <a href="lomasvisto1.html">
+                                <img src="imagenes/lentes.jpg" alt="Rock and Roll Hall of Fame">
+                                <p>Nuevos lentes de realidad virtual de FB</p>
+                                </a>
+                        </div>
+                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                  <!--  <div role="tablist" class="carousel__indicadores"></div>    -->
+            </div>
+	</div>
+
+
+
+
+    
+    </main>
+    </div>
+
+    
+    
+
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="glider/glider.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

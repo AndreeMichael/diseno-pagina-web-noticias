@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="stylesheet" href="glider/glider.min.css">
+    <link rel="stylesheet" href="glider/estilosglider.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilosnoti.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    <title>Pagina de noticias</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo">
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+
+                    <figure>
+                        <h2>Colombia rescata el autocine para entretenerse y evitar contagios durante la pandemia </h2>
+                        <center> <img src="imagenes/autocine.jpg" alt=""  class="noticia" ></center>
+                        
+                    </figure>
+                    <p>Colombia inicia viaje al pasado con autocine para enfrentar la pandemia. <br><br>
+                        Una antigua forma de disfrute cinematográfico fue rescatada en Colombia con la apertura este sábado de un autocine, propuesta que aportó una dosis de la llamada "nueva normalidad" y que pretende dar oxígeno a la industria del entretenimiento ante las restricciones motivadas por la COVID-19.<br><br>
+
+                    Con una pantalla de 115 metros cuadrados y el sonido transmitido a una frecuencia accesible desde la radio de los vehículos, el viaje al pasado empezó con la cinta "Bloodshot" entre palomitas de maíz y estrictos protocolos de bioseguridad.<br><br>
+
+                    Hasta una terraza del Centro Comercial Mayorca Mega Plaza en el municipio de Sabaneta, ubicado en el departamento de Antioquia y aledaño a la ciudad de Medellín, llegaron algunos cinéfilos para presenciar bajo las estrellas y en cuatro ruedas la proyección después de más de tres meses sin acceso a las salas.<br><br>
+
+                    Para Carlos Serna, uno los asistentes a la premier, este espacio representó disfrutar en familia de entretenimiento fuera del hogar.<p>
+                    <center><img src="imagenes/autocine2.jpg" alt=""></center>
+                    <p>"Aunque tenemos en la casa televisores no es igual a compartir una experiencia con la pantalla grande y el sonido. Estábamos esperando el lanzamiento y vinimos con muchísimas expectativas", expresó.<br><br>
+
+                        La empresa Cinemas Procinal se encargó del montaje de la experiencia "Autocinema" utilizando la tecnología de las salas de cine, proyectores certificados y procesadores de sonido de última generación.<br><br>
+                        
+                        Este autocine, el primero que abre sus puertas en Colombia durante la pandemia, cuenta con capacidad para 40 vehículos y ofrecerá todos los días dos funciones nocturnas, para las que ya ha programado la proyección de largometrajes como "El hombre invisible", "Jumanji", "Bad Boys" y "JoJo Rabbit", entre otros.<br><br>
+                        
+                        "El sector del cine ha sido uno de los más golpeados por la pandemia. Lo que hicimos fue empezar a pensar y a soñar cómo volvíamos a reunir junto a una pantalla gigante a las personas. Vimos la posibilidad en el autocinema porque ya había sido una iniciativa en otros países que estaba funcionando", expresó la coordinadora de comunicaciones y mercadeo de Cinemas Procinal.</p>
+                    
+                        
+            </section>
+
+           
+
+            <div class="separador">
+            <h3 class="lines-effect">Noticias que podrian interesarte</h3>
+            </div>
+
+    
+            
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+                        <a href="dark.html">
+						<img src="imagenes/dark1.jpg" alt="Rock and Roll Hall of Fame">
+                        <p>“Dark”, temporada 3 ¿Final?</p>
+                        </a>
+					</div>
+					<div class="carousel__elemento">
+						<a href="nasa.html">
+                            <img src="imagenes/nasa.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>Científico astrónomo descubre una nueva "mancha" en Júpiter</p>
+                            </a>
+					</div>
+					<div class="carousel__elemento">
+						<a href="xbox.html">
+                            <img src="imagenes/xbox.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>Xbox Series S</p>
+                            </a>
+					</div>
+					<div class="carousel__elemento">
+						<a href="i9.html">
+                            <img src="imagenes/i9.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>Se filtra el Intel Core i9-10850K</p>
+                            </a>
+					</div>
+	
+					<div class="carousel__elemento">
+						<a href="intel.html">
+                            <img src="imagenes/intel.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>Intel lanzaría su chipset Z590</p>
+                            </a>
+					</div>
+					<div class="carousel__elemento">
+						<a href="bbva.html">
+                            <img src="imagenes/bbva.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>BBVA y sus colaboradores donan 50 mil imlementos. </p>
+                            </a>
+					</div>
+					<div class="carousel__elemento">
+						<a href="microsoft.html">
+                            <img src="imagenes/microsoft.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>Microsoft remueve la palabra “Master” de Github</p>
+                            </a>
+					</div>
+					<div class="carousel__elemento">
+						<a href="lomasvisto1.html">
+                            <img src="imagenes/lentes.jpg" alt="Rock and Roll Hall of Fame">
+                            <p>Nuevos lentes de realidad virtual de FB</p>
+                            </a>
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+			  <!--  <div role="tablist" class="carousel__indicadores"></div>    -->
+		</div>
+	</div>
+
+
+
+
+    
+    </main>
+    </div>
+
+    
+    
+
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="glider/glider.min.js"></script>
+    <script src="glider/glider.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

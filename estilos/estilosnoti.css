@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+.contenedor {
+	width: 80%;
+	
+	margin:auto;
+}
+hr{
+    padding: 0px;
+    margin: 0px;
+}
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	/*max-width:1000px;*/
+    width:100%;
+	background-color: white;
+}
+header nav a {
+	display:inline-block;
+	color:black;
+	text-decoration:none;
+	margin:6px 20px;
+    font-size:20px;
+    border-bottom: 2px white solid;
+}
+header nav a:hover {
+    cursor:pointer;
+    color: black;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+}
+.logo{
+    margin: 10px;
+    text-align: center;
+}
+.logo a:hover{
+    color: black;
+    text-decoration: none;
+    cursor:pointer;
+}
+h1{
+    color: black;
+    text-align: center;
+    margin-left: 115px;
+}
+/*formulario suscribete*/
+header button{
+    border: none;
+    margin-top: 4px;
+    padding: 8px;
+    float: right;
+    margin-right: 15px;
+    background-color: rgba(0, 26, 255, 0.719) ;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+/*********************************/
+
+/****foooooooooteeeeer **********/
+
+footer{
+    padding: 10px;
+    background-color: rgba(0, 26, 255, 0.719);
+    display: flex;
+}
+footer p{
+    color: black;
+    margin: auto;
+}
+footer div a{
+    text-decoration: none;
+    color: black;
+
+}
+.social{
+   margin: auto;
+}
+footer i{
+    color: black;
+    padding-left: 15px;
+}
+
+footer i:hover{
+    color: white;
+}
+
+/***********************/
+/**********noticias*****************/
+main{
+    display: block;
+    width: 100%;
+}
+section{
+    width: 100%;
+    padding:3%;
+}
+figcaption,h4{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    cursor: auto;
+}
+section img{
+    width: 90%;
+    padding: 4%;
+}
+.video{
+    width: 560px;
+    height: 315px;
+}
+h2{
+    font-weight: bold;
+    
+}
+main p{
+    font-size: 20px;
+}
+/*********separador*****/
+.separador{
+    text-align: center;
+    margin: 15px 0px;
+    margin-bottom: 25px;
+}
+.separador h3{
+    display: inline-block;
+    position: relative;
+}
+.separador h3::after, .separador h3::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+.separador h3::before{
+    left: -120px;
+}
+.separador h3::after{
+    right: -120px;
+}
+/****************************/
+
+figure img{
+    width: 80%;
+}
+.img1,img2,img3{
+    width: 70%;
+}
+
+
+
+
+
+
+
+/*aside{
+    margin:3%;
+    width: 40%;
+}
+aside img{
+    width: 50%;
+    height: 80%;
+}
+article a{
+    display: flex;
+}
+article{
+    width: 100%;
+}*/
+
+
+
+

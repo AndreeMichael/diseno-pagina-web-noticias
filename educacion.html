@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <script src="js/formulario.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estiloscategoria.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fa9d0dc899.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/popup.css" type="text/css">
+    
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <button id="btn-abrir-popup" class="btn-abrir-popup">SUSCRIBETE</button>
+       
+        <!--formulario emergente-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe las noticias actualizadas.</h4>
+            <form action="" onsubmit="return validar();">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" id="nombre">
+                    <input type="text" placeholder="Apellido" id="apellido">
+                    <input type="text" placeholder="Correo" id="correo">
+                    <div class="check">
+                    <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Aceptar politicas de privacidad.</label></div>
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+            </div>
+        </div>
+     <!--formulario emergente-->
+
+			<div class="logo"> 
+                <!-- <center><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt=""></center>-->
+                <a href="inicio.html"><h1>NOTICIAS</h1></a>
+            </div>
+           
+            
+
+			<center><nav class="menu">
+                <hr color="gray" size=1>
+               
+                    <a href="economia.html">Economia</a>
+                    <a href="educacion.html">Educacion</a>
+                    <a href="mundo.html">Mundo</a>
+                    <a href="peru.html">Perú</a>
+                    <a href="politica.html">Política</a>
+                    <a href="tecnologia.html">Tecnología</a>
+                    <hr color="black" size=2>
+			</nav></center>
+	</header>
+
+
+
+    <main>
+
+        <div class="contenedor">
+
+        <div class="separador">
+            <h3 class="lines-effect">Educacion</h3>
+            </div>
+
+            <div class="primero">
+        <section >
+            <a href="edu1.html">
+            <img src="imagenes/edu1.png" alt="" >
+            <h4>Educación en movimiento: la propuesta multimodal de la Universidad Continental</h4>
+            </a>
+        </section>
+
+        <section >
+            <a href="edu2.html">
+            <img src="imagenes/edu2.jpg" alt="" >
+            <h4>Ministro de Educación: No me preocupa que el Congreso investigue a Sunedu, sino retroceder en la reforma universitaria</h4>
+           
+            </a>
+        </section> 
+        
+        <section >
+            <a href="edu3.html">
+            <img src="imagenes/edu3.jpg" alt="" >
+           <h4>Minedu contrató a 6 mil profesionales para atender a 110 mil nuevos alumnos de colegios públicos</h4>
+            </a>
+        </section> 
+    </div>
+
+    <div class="separador">
+        <h3 class="lines-effect">Mas noticias</h3>
+        </div>
+
+        <div class="segundo">
+            <article >
+        
+                <a href="edu4.html" >
+                <img src="imagenes/edu4.jpg" alt="" >
+                <div class="texto">
+                <h3>MEF: Sunedu es clave para lograr un país con acceso a educación de calidad</h3>
+                <p>La ministra de Economía y Finanzas, María Antonieta Alva, sostuvo hoy que la Superintendencia Nacional de Educación Superior Universitaria (Sunedu) es clave para lograr un país con acceso a educación de calidad.
+
+                  </p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="edu5.html">
+                <img src="imagenes/edu5.jpg" alt="" >
+                <div class="texto">
+                <h3>Proponen que locales escolares sea usados para atender casos asintomáticos</h3>
+                <p>Propuesta sería aplicada en casos que no existan condiciones para aislamiento domiciliario.</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="edu6.html">
+                <img src="imagenes/edu6.jpg" alt="" >
+                <div class="texto">
+                <h3>Centros de educación técnico productiva serán parte de reactivación</h3>
+                <p>El Gobierno Central autorizó el uso de laboratorios y talleres de las instituciones de educación superior y centros de educación técnica productiva (Cetpro) con un aforo máximo equivalente al 50 % de su capacidad habitual, según una norma publicada en el Diario Oficial El Peruano.</p>
+                </div>
+                </a>
+        
+            </article>
+        
+            <article>
+        
+                <a href="edu7.html">
+                <img src="imagenes/edu7.jpg" alt="" >
+                <div class="texto">
+                <h3>Pronabec ofrece becas para escolares mujeres interesadas en carreras de ciencias</h3>
+                <p>Está dirigido a estudiantes con rendimiento académico que este año cursan 5º de secundaria</p>
+                </div>
+                </a>
+        
+            </article>
+        
+        </div>      
+
+</div>
+    </main>
+
+
+
+    <footer>
+        
+        <p>Copyright © 2020</p>
+        
+        <div class="social">
+    
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+    
+        </div>
+    </footer>
+    
+
+   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animaciones.js"></script>
+</body>
+</html>
